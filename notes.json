@@ -1,0 +1,18 @@
+
+const fs = require('fs');
+
+fs.writeFileSync('hello.txt', 'Hello from Node.js');
+
+
+
+let hi  = ['h','o','l','a'];
+console.log(hi)
+
+
+setTimeout(function(){
+    hi.forEach(letter => {
+        console.log(letter);
+    });
+},3000);
+
+process.exit();
